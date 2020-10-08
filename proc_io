@@ -16,5 +16,4 @@ if output_file_name:
 cwd = os.path.dirname(os.path.abspath(__file__))
 os.environ['LD_PRELOAD'] = os.path.join(cwd, 'libproc_io.so')
 
-print ("start! %s", sys.argv[start_arg_idx:])
 os.execvpe(sys.argv[start_arg_idx], sys.argv[start_arg_idx:], os.environ)
