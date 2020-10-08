@@ -19,7 +19,7 @@ void dump_proc_io()
   output = getenv("PROC_IO_OUTPUT");
 
   if (output == NULL)
-    output = "/tmp/iostat.log";
+    output = "/tmp/proc_io.log";
 
   /* TODO: Maybe need a lock for output file?  */
   FILE *f = fopen(output, "a");
